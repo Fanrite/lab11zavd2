@@ -44,7 +44,7 @@ namespace lab11zavd2
                     arr[i] = Math.Sqrt(arr[i]);
 
                 if (arr[i] < 0)
-                    arr[i] = Math.Pow(arr[i], 1 / 3);
+                    arr[i] = Math.Sign(arr[i]) * Math.Pow(Math.Abs(arr[i]), 1 / 3.0);
 
                 output += $" array[{i}]={arr[i]}";
             }
